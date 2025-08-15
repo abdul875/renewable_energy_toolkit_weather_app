@@ -1,23 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-Wrap the DrawerLayout with FrameLayout to use the same View type for the same view ID
-across the layout configurations
--->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/drawer_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+<TextView
+android:id="@+id/titleText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Welcome to My App"
+android:textSize="24sp"
+android:textStyle="bold"
+android:layout_gravity="center_horizontal"
+android:padding="10dp" />
 
-        <include
-            android:id="@+id/app_bar_main"
-            layout="@layout/app_bar_main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+<EditText
+android:id="@+id/inputField"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Type something..." />
 
-    </androidx.drawerlayout.widget.DrawerLayout>
-</FrameLayout>
+<Button
+android:id="@+id/actionButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Show Message" />
+
+<TextView
+android:id="@+id/resultText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text=""
+android:textSize="18sp"
+android:paddingTop="20dp" />
+    </LinearLayout>
