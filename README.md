@@ -36,7 +36,7 @@ An Android app that provides **real-time weather forecasts** and calculates the 
 ## 📦 APK Download  
 
 The latest **APK build** is available here:  
-👉 [Download APK]((https://github.com/abdul875/renewable_energy_toolkit_weather_app/blob/dev/app/release/app-release.apk))  
+👉 [Download APK](https://github.com/abdul875/renewable_energy_toolkit_weather_app/blob/dev/app/release/app-release.apk)
 
 ---
 
